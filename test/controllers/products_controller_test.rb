@@ -16,7 +16,9 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create product" do
+    Product.destroy_all
     assert_difference('Product.count') do
+      binding.pry
       post products_url, params: { product: { description: @product.description, image_url: @product.image_url, price: @product.price, title: @product.title } }
     end
 
