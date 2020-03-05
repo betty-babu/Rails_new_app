@@ -7,16 +7,11 @@ one:
   price: 9.99
 
 two:
-  title: MyString1
+  title: MyString
   description: MyText
   image_url: tv.jpg
   price: 9.99
 
-three:
-  title: MyString2
-  description: MyText
-  image_url: tv.jpg
-  price: 9.99
 
 ruby:
   title:       Programming Ruby 1.9

@@ -48,7 +48,7 @@
   <% @products.each do |product| %>
   <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
   <td class="image">
-  <%= image_tag(product.image_url, class: 'list_image') %>
+  <%= image_tag(product.image_url, class: 'list_image', style: 'width:200px;height:250px') %>
   </td>
   <td class="description">
   <h1><%= product.title %></h1>

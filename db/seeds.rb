@@ -51,7 +51,7 @@ Product.create!(title: 'Ruby Performance Optimization',
       all those “hard” things aren’t so difficult after all, and your code
       will run orders of magnitude faster.
       </p>},
-  image_url: 'rubz.jpg',
+  image_url: 'rubyz.jpg',
   price: 46.00)# . . .
   # . . .
   Product.create(title: 'ONE-PLUS Cellphone',
