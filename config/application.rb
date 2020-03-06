@@ -10,6 +10,9 @@ module Depot
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
+    #gem 'actioncable', github: 'rails/actioncable', branch: 'archive'
+    # require "action_cable/engine"
+    # config.autoload_paths += %W(#{config.root}/app/channels)
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

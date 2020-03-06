@@ -2,12 +2,10 @@
 <html>
 <head>
 
-<title>Pragprog Books Online Store</title>
-<%= csrf_meta_tags %>
-<%= stylesheet_link_tag 'application', media: 'all',
-'data-turbolinks-track': 'reload' %>
-<%= javascript_include_tag 'application',
-'data-turbolinks-track': 'reload' %>
+  <title>Pragprog Books Online Store</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
 <header class="main">
@@ -18,11 +16,11 @@
 <nav class="side_nav">
 
 <!-- to avoid the problem of nil cart. -->
-<% if @cart %>
+<!-- <% if @cart %> -->
 <div id="cart" class="carts">
-<%= render @cart %>
+<%= render_if @cart && @cart.line_items.any?, @cart %>
 </div>
-<% end %>
+<!-- <% end %> -->
 
 <ul>
 <%= Time.now.strftime("%-d %b %Y %I:%M %p") =%>
